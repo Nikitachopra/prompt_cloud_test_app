@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TryPrompt</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% if !flash[:notice].nil? %>
+      <script type="text/javascript">
+        $(function() {
+          $.notifyBar({
+            html: "<%= flash[:notice] %>",
+            delay: 10000,
+            animationSpeed: "normal"
+          });
+        });
+      </script>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>

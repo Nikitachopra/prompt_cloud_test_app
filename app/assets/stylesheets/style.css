@@ -1,0 +1,16 @@
+.cinform {
+	background-color: white;
+	padding: 20px;
+	width: min-content;
+}
+.row {
+	height: 100vh; 
+	align-content: center; 
+	background-image: url('/assets/cin.jpg'); 
+	background-size: cover;
+}
+.row div {
+	text-align: center; 
+	flex-basis: content; 
+	margin: auto;
+}

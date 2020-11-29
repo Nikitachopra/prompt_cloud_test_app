@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="cinform" style="width: 25vw;">
+			<p><strong>CIN:</strong><%= @cin %></p>
+			<p>Listing Status: <%= @listing ? "Listed" : "Unlisted" %> Company</p>
+			<p>Industry type: <%= @industry %></p>
+			<p>State: <%= @state %></p>
+			<p>Company Incorporated year: <%= @year %></p>
+			<p>Company Type: <%= @ownership %></p>
+			<p>Registration Number: <%= @registration_no %></p>
+			<p><%= link_to "Search history", history_index_path %></p>
+			<p><%= link_to "Back to Search", new_history_path %></p>
+		</div>
+	</div>
+</div>
